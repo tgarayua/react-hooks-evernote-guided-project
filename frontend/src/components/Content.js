@@ -15,15 +15,14 @@ function Content({ notes, title, body }) {
   const getContent = () => {
     if (false) {
       return <NoteEditor />;
-    } else if (false) {
-      return <NoteViewer />;
+    } else if (true) {
+      return <NoteViewer title={title} body={body} />;
     } else {
       return <Instructions />;
     }
   };
 
   return <div className="master-detail-element detail">{getContent()}
-   <NoteViewer title={title} body={body} />
   </div>;
 }
 

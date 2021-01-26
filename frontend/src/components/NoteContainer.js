@@ -10,6 +10,7 @@ function NoteContainer() {
   const [notes, setNotes] = useState([])
   const [body, setBody] = useState("")
   const [title, setTitle] = useState("")
+  // const [showEditForm, setShowEditForm] = useState(false)
 
   useEffect(() => {
     fetch(notesAPI)
@@ -18,6 +19,10 @@ function NoteContainer() {
       setNotes(notes)
     });
   }, []);
+
+  // function handleClick() {
+  //   setShowEditForm(true)
+  // }
 
   function getClickedNote(noteTitle, noteBody) {
     setTitle(noteTitle)
