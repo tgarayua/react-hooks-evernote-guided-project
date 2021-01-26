@@ -1,10 +1,10 @@
 import React from "react";
 
-function NoteViewer() {
+function NoteViewer({ title, body}) {
   return (
     <>
-      <h2>Title</h2>
-      <p>Body</p>
+      <h2>Title: {title} </h2>
+      <p>Body: {body} </p>
       <button>Edit</button>
     </>
   );
