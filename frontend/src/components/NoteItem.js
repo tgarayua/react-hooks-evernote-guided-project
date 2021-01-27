@@ -11,7 +11,7 @@ function NoteItem({ note, getClickedNote, noteTitle, noteBody }) {
   return (
     <li onClick={handleClick}>
       <h2>{noteTitle}</h2>
-      <p>{noteBody.substring(0, 50)}</p>
+      <p>{noteBody}</p>
     </li>
   );
 }
